@@ -1,0 +1,106 @@
+/* Terminado de revisar día 27/02/21. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Teko&display=swap');
+
+*{
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {background-color: #FAFAFA;}
+img {width: 100%;}
+
+h1{
+  font-size: calc(1rem + .2vw);
+  font-weight: 500;
+  margin: 1rem .6rem;
+}
+
+input[type=text], input[type=password]{
+  background: none;
+  border: 0;
+  font-size: 1rem;
+  margin-left: 1rem;
+  outline: none;
+  width: 100%;
+}
+input[type=submit]{
+  background-color: #DADADA;
+  border: none;
+  border-radius: .5rem;
+  display: block;
+  font-size: 1.5rem;
+  margin: auto;
+  outline: none;
+  padding: 0.5rem 2rem;
+}
+  input[type=submit]:hover{
+    transform: scale(1.05);
+  }
+
+
+.error{
+  color: #E50B0B;
+  display: none;
+  font-size: 13px;
+  margin: auto;
+  padding: 7px 10px;
+  text-align: start;
+  width: 380px;
+}
+
+#box-logo{
+  margin: 2rem;
+  width: 10rem;
+}
+  #box-logo:hover {transform: scale(1.05);}
+
+.back-img{
+  background: url("../img/clientes.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(80%) opacity(0.7) blur(1px);
+  height: 100vh;
+  min-height: 600px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  z-index: -1;
+}
+
+.box-form{
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 350px;
+  padding: 2rem;
+  width: 75%;
+}
+  .box-form .title-box{
+    font-size: calc(2rem + 1vw);
+    font-weight: 600;
+    text-align: center;
+  }
+  .box-form .box-input{
+    align-items: center;
+    background-color: rgba(255, 87, 51, 0.1);
+    border-radius: .5rem;
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+    .box-form .icon{
+      border-right: .1rem solid black;
+      padding-right: .5rem;
+      width: 1rem; 
+    }
+  .box-form a{
+    color: black;
+    display: block;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0 0 1rem 1rem;
+    text-decoration: none;
+  }
+    .box-form a:hover {font-weight: bold;}
