@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TKAR Garage . Inicio Clientes</title>
+
+    <!-- Agregando hojas de estilos-->
+    <link rel="stylesheet" href="css/formCliente.css">
+</head>
+
+
+<body>
+    <div id="box-logo">
+        <a href="index.html">
+            <img src="img/logotipo.png" alt="logotipo de la emprasa">
+        </a>
+    </div>
+
+    <div class="box-form">
+        <p class="title-box">Inicio de Sesión</p>
+        <h1>Tenga acceso al historial de mantenimiento de su automóvil ingresando aquí.</h1>
+        <p class="error">* Usuario o Contraseña incorrecta. Inténtalo de nuevo.</p>
+
+        <form id="form" action="" method="POST">
+            <div class="box-input">
+                <div class="icon">
+                    <img class="image" src="svg/user.svg" alt="icono de usuario">
+                </div>
+                <input id="usuario" type="text" placeholder="Usuario">
+            </div>
+                
+            <div class="box-input">
+                <div class="icon">
+                    <img class="image" src="svg/locked-padlock.svg" alt="icono de usuario">
+                </div>
+                <input id="contrasena" type="password" placeholder="Contraseña">
+            </div>
+
+            <a href="#">Recuperar Contraseña</a>
+
+            <input id="btnSubmit" type="submit" value="Continuar" disabled>
+        </form>
+    </div>
+    
+    <!-- Imagen de fondo - por SEO dejarlo por último -->
+    <div class="back-img"></div>
+
+    <script src="js/loginCliente.js"></script>
+</body>
+
+</html>

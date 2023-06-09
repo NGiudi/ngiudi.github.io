@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TKAR Garage . Contacto</title>
+
+    <!-- Animation of Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Agregando hojas de estilos-->
+    <link rel="stylesheet" href="css/commonStyle.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+
+<body>
+    <!-- Barra de Redes Sociales -->
+    <div class="bg-gray"  id="top-info">
+        <div class="d-flex g-info">
+            <div class="d-flex">
+                <div class="info-elm">
+                    <img class="svg-img" src="svg/whatsapp.svg" alt="icono de whatsapp">
+                    <p class="d-flex text">(11) 6794-6707</p>
+                </div>
+
+                <div class="info-elm ml-1">
+                    <img class="svg-img" src="svg/whatsapp.svg" alt="icono de whatsapp">
+                    <p class="d-flex text">(11) 4914-6344</p>
+                </div>
+            </div>
+    
+            <div class="info-elm">
+                <img class="svg-img" src="svg/clock.svg" alt="icono de reloj">
+                <p class="d-flex text">Lunes a Viernes - 10hs a 18hs</p>
+            </div>
+        
+            <div class="info-elm">
+                <a target="_blank" href="https://www.facebook.com/">
+                    <img class="sr-btn" src="svg/facebook.svg" alt="icono de facebook">
+                </a>
+
+                <a target="_blank" href="https://ar.pinterest.com/">
+                    <img class="sr-btn" src="svg/pinterest.svg" alt="icono de pinterest">
+                </a>
+    
+                <a target="_blank" href="https://www.instagram.com/">
+                    <img class="sr-btn" src="svg/instagram.svg" alt="icono de instagram">
+                </a> 
+            </div>
+        </div>
+    </div>
+
+     <!-- Barra de Navegación -->
+    <div id="bar-nav" class="d-flex">
+        <!-- Agrego contenido con JavaScript --> 
+    </div>
+
+    <!-- Formulario de Contacto -->
+    <div class="form-back">
+        <div class="container-form">
+            <h1>Contáctanos</h1>
+            <p class="error">ERRORs</p>
+
+            <form action="" method="POST">
+                <div class="g-name">
+                    <input class="input-style bg-orange" type="text" id="nombre" placeholder="Nombre">
+                    <input class="input-style bg-orange" type="text" id="apellido" placeholder="Apellido">
+                </div>
+    
+                <input class="input-style bg-orange" type="email" id="email" placeholder="Email">
+                <textarea class="input-style bg-orange" id="mensaje" placeholder="Mensaje"></textarea>
+                
+                <div class="btn-container">
+                    <input type="submit" class="input-style  bg-black" id="btnEnviar">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <!-- Sección de Información -->
+    <div class="cards-container">
+        <div class="card" data-aos="fade-right">
+            <img class="svg-img" src="svg/location.svg" alt="icono de localización">
+            <p>Hipolito Yrigoyen 1330</p>
+            <p>Capital Federal</p>
+            <p>Argentina</p>
+        </div>
+
+        <div class="card" data-aos="zoom-in">
+            <img class="svg-img" src="svg/call.svg" alt="icono de telefono">
+            <p>tel: +54 9 11 4914-6344</p>
+            <p>tel: +54 9 11 6794-6707</p>
+        </div>
+
+        <div class="card" data-aos="fade-left">
+            <img class="svg-img" src="svg/clock2.svg" alt="icono de reloj">
+            <p>Horario de atención de lunes a</p>
+            <p>viernes de 10hs a 20hs y sábados</p>
+            <p>de 8hs a 14hs</p>
+        </div>
+    </div>
+
+    <!-- Mapa de Google -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13133.337016595504!2d-58.42875065!3d-34.620992550000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1613514744507!5m2!1ses!2sar"
+        height="450" style="border:0; width: 100%;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+
+    <footer class="bg-gray">
+        <div class="d-flex f-info">
+            <div class="f-card">
+                <img style="width: 140px;" src="img/logotipo.png" alt="">
+                <p>G.A.R.A.G.E</p>
+            </div>
+    
+            <div>
+                <p>ENCONTRANOS EN LAS REDES</p>
+                <div class="g-rs">
+                    <a class="f-red" href="">
+                        <img src="svg/facebook.svg" alt="icono de facebook">
+                    </a> 
+                    
+                    <a class="f-red" href="">
+                        <img class="btn-red" src="svg/pinterest.svg" alt="icono de pinterest">
+                    </a>
+                        
+                    <a class="f-red" href="">
+                        <img class="btn-red" src="svg/instagram.svg" alt="icono de instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="copy">Copyright © todos los derechos reservados</p>
+    </footer>
+     
+    <!-- JQuery Librery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Animation of Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Mis Archivos JavaScript -->
+    <script src="js/formularioContacto.js"></script>
+    <script src="js/navegacion.js"></script>
+</body>
+
+</html>

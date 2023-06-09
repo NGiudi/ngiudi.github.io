@@ -1,0 +1,158 @@
+.sec-title{
+  font-size: calc(2rem + .5vw);
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.title-line{
+  background-color: #E9650D;
+  border: none;
+  height: .25rem;
+  margin-bottom: 2rem;
+  width: 3rem;
+}
+
+.box-content {
+  margin: auto;
+  padding: 4rem 0;
+  width: 80%;
+}
+
+/* Estilos de la portada de la web*/
+.portada{
+  background-image: url("../img/vento.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 100%, 100% 90%, 100% 0, 0 0);
+  height: 600px;
+  width: 100%;
+}
+
+
+/* Estilos de la barra de los valores.*/
+.cards3{
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto;
+  max-width: 1200px;
+  width: 95%;
+}
+  .cards3 .elem{
+    display: flex;
+    max-width: 350px;
+    width: 30%;
+  }
+    .cards3 .elem h3{
+      font-size: calc(1rem + 0.8vw);
+      text-align: center;
+    } 
+    .cards3 .elem p{
+      font-size: calc(.8rem + .3vw);
+      padding: 0 1rem;
+    } 
+    .cards3 .elem .icon{
+      background-color: #DADADA;
+      border-radius: .5rem;
+      font-size: 2.5rem;
+      padding: 1rem 1.2rem;
+    }
+      .cards3 .elem .icon:hover{
+        background-color: #E9650D;
+        color: white;
+      }
+
+
+/* Estilos de la franja de turno.*/
+#back-turn {
+  background: url("../img/smoke.png");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  display: block;
+  padding: 3rem;
+  text-align: end;
+  text-decoration: none;
+}
+  #back-turn span{
+    border: solid 2px white;
+    color: white;
+    font-size: calc(1.3rem + .6vw);
+    padding: .5rem 1.5rem;
+  }
+    #back-turn span:hover{
+      border-color: #E9650D;
+      color:#E9650D;
+    }
+
+
+/* Estilos de la seccion de servicios.*/
+#box-jobs{
+  margin: 5rem auto;
+  min-height: 450px;
+  max-width: 1200px;
+  position: relative;
+  width: 80%;
+}
+  #box-jobs .services h2{
+    border-bottom: .1rem solid transparent;
+    border-image: linear-gradient(90deg, rgba(63,64,64,1) 0%, rgba(63,64,64,1) 50%, rgba(255,255,255,0.7035189075630253) 100%) 1;
+    font-size: calc(1.2rem + 0.4vw);
+    margin: .8rem;
+    padding: .5rem 1rem;
+  }
+  #box-jobs .services h4 {font-size: calc(2.5rem + 1vw);}
+
+/* Barra para dejar comentario */
+#bar-leave-comment {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+  #bar-leave-comment p{
+    font-size: calc(1rem + .8vw);
+    margin-right: 2rem;
+  }
+  #bar-leave-comment a{
+    border: solid .15rem white;
+    color: white;
+    font-size: calc(1rem + .8vw);
+    padding: .5rem 1.2rem;
+    text-decoration: none;
+  }
+
+@media screen and (max-width: 500px){
+  .box-content {width: 90%;}
+}
+
+@media screen and (max-width: 900px){
+  .title-line {margin: 0 auto 2rem auto;}  /*top-rigth-bottom-left*/
+  
+  #box-jobs {width: 80%;}
+    #box-jobs .services h2{
+      border-image: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(63,64,64,1) 50%, rgba(255,255,255,0.7035189075630253) 100%) 1;
+      margin: auto;
+      text-align: center;
+    }
+    #box-jobs #box-images {position: relative;}
+    #box-jobs .services h4 {text-align: center;}
+}
+
+@media screen and (min-width: 900px){
+  #service1 {width: calc(100% - 500px);}
+  #service2 {width: calc(100% - 550px);}
+  #service3 {width: calc(100% - 450px);}
+  #service4 {width: calc(100% - 400px);}
+  #service5 {width: calc(100% - 350px);}
+}
+
+@media screen and (max-width: 1150px){
+  .cards3{
+    display: block;
+    width: 90%;
+  }
+    .cards3 .elem{
+      justify-content: center;
+      margin: 1rem auto;
+      width: 100%;
+    }
+}

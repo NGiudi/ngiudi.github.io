@@ -1,0 +1,108 @@
+.center {text-align: center;}
+
+/* Listado de Servicios */
+.reverse {flex-direction: row-reverse;}
+
+.service{
+  display: flex;
+  margin: auto;
+  padding: 50px 0;
+  width: 80%;
+}
+  .service img {
+    max-width: 200px;
+  }
+  .service .tag{
+    color: #FF5733;
+    font-size: calc(.6rem + .5vw);
+  }
+  .service h2{
+    font-size: calc(1.8rem + .5vw);
+  }
+  .service .info{
+    color: #242424;
+    font-size: calc(1rem + .5vw);
+    padding-left: 10px;
+  }
+  .service .info p{
+    margin-bottom: 5px;
+  }
+
+
+/* Sección mantenimiento preventivo */
+.mp{
+  margin: auto;
+  padding: 3rem 0;
+  width: 80%;
+}
+  .mp h2{
+    font-size: calc(1.8rem + 0.8vw);
+    margin-bottom: 2rem;
+    text-align: center;
+  }  
+  .mp .mp-flex{
+    display: flex;
+    justify-content: center;
+  }
+    .mp .mp-flex img{
+      max-width: 350px;
+      width: 80%;
+    }
+    .mp .mp-flex .mp-info{  
+      font-size: calc(1rem + .5vw);
+      margin: 2rem 0 0 2rem;
+      max-width: 700px;
+    }
+      .mp .mp-flex .mp-info h3{
+        font-size: calc(1rem + .5vw);
+        font-weight: 400;
+        margin: 1rem 0 1rem 1rem;
+      }
+      .mp .mp-flex .mp-info i{
+        font-size: 20px;
+        margin-left: 1rem;
+      }
+
+.box-card{
+  justify-content: space-around;
+  padding: 2%;
+}
+  .box-card .card{
+    text-align: center;
+  }
+    .box-card .card img{
+      padding: .5rem;
+      width: calc(3rem + 2vw);
+    }
+    .box-card .card h3{
+      font-size: calc(1rem + 1vw);
+      text-align: center;
+    }
+
+    
+@media screen and (max-width: 768px){
+  .service{
+    display: block;
+  }
+    .service img{
+      margin: 2rem 0 0 0;
+    }
+
+  .mp .mp-flex{
+    display: block;
+  }
+    .mp .mp-flex img{
+      display: block;
+      margin: 0 auto 2rem auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px){
+  .mp .mp-flex{
+    display: block;
+  }
+    .mp .mp-flex img{
+      display: block;
+      margin: 0 auto 2rem auto;
+    }
+}

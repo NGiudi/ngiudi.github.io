@@ -1,0 +1,52 @@
+/* Terminado de revisar día 28/02/21. */
+.pos-img-top    {transform: translate( 50%,   0%) scale(.65) rotate(45deg);}
+.pos-img-left   {transform: translate(  0%,  50%) scale(.65) rotate(45deg);}
+.pos-img-right  {transform: translate(100%,  50%) scale(.65) rotate(45deg);}
+.pos-img-bottom {transform: translate( 50%, 100%) scale(.65) rotate(45deg);}
+
+#img1{
+  background-image: url("../img/vento.jpg");
+  background-size: cover;
+}
+#img2{
+  background-image: url("../img/vento.jpg");
+  background-size: cover;
+}
+#img3{
+  background-image: url("../img/vento.jpg");
+  background-size: cover;
+}
+#img4{
+  background-image: url("../img/vento.jpg");
+  background-size: cover;
+}
+
+#box-images {
+  height: 70vw;
+  max-height: 450px;
+  max-width: 450px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70vw;
+}
+  .rhombus {
+    box-shadow: .2rem .2rem .4rem #999;
+    border-radius: 1rem;
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 50%;
+  }
+    .back-img{
+      transform: rotate(-45deg) scale(1.4);
+      height: 100%;
+      width: 100%;
+    }
+
+@media screen and (max-width: 900px){
+  #box-images {
+    margin: 4rem auto 0 auto;
+    position: relative;
+  }
+}
